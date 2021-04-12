@@ -1,3 +1,4 @@
+// подключаем шрифты google fonts
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
 
 // подключение внешних стилей (обнуление)
@@ -25,7 +26,7 @@ $color_2:rgb(38, 41, 218);
 // вложенность
     .block {
         font-family: "PT sans";
-        width: 300px / 960px *100%;
+        width: 400px / 960px *100%;
         background-color: #666;
         padding: 30px;
         color: $color_1;
@@ -58,6 +59,6 @@ $color_2:rgb(38, 41, 218);
 
 // применияем миксины (подключаем)
 .link-2 {
-    @include fontz(50px,green,underline);
+    @include fontz(50px,rgb(56, 20, 238),underline);
     @extend %tplborder;
 }

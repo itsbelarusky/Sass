@@ -79,7 +79,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .block {
   font-family: "PT sans";
-  width: 31.25%;
+  width: 41.6666666667%;
   background-color: #666;
   padding: 30px;
   color: #000;
@@ -108,6 +108,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .link-2 {
   font-size: 50px;
-  color: green;
+  color: #3814ee;
   text-decoration: underline;
 }
