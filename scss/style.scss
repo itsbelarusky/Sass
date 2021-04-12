@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+
 // подключение внешних стилей (обнуление)
 @import "nullstyle.scss";
 
@@ -22,6 +24,7 @@ $color_2:rgb(38, 41, 218);
 
 // вложенность
     .block {
+        font-family: "PT sans";
         width: 300px / 960px *100%;
         background-color: #666;
         padding: 30px;

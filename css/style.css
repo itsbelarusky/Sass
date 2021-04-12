@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
 /*Обнуление*/
 * {
   padding: 0;
@@ -77,6 +78,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .block {
+  font-family: "PT sans";
   width: 31.25%;
   background-color: #666;
   padding: 30px;
