@@ -1,7 +1,60 @@
-body {
-    padding: 30px;
+// подключение внешних стилей (обнуление)
+@import "nullstyle.scss";
+
+// Переменные
+$fz:80px;
+$color_1:#000;
+$color_2:rgb(38, 41, 218);
+
+// шаблон, для добавления прописываем @extend %tplborder;
+%tplborder {
+    border-bottom: 5px dashed red;
+}
+
+// Миксины (параметры задаем)
+@mixin fontz($f,$c,$t) {
+    font-size: $f;
+    color: $c;
+    text-decoration: $t;
+    
+}
+
+
+// вложенность
     .block {
-        font-size: 30px;
-        color: blue;
+        width: 300px / 960px *100%;
+        background-color: #666;
+        padding: 30px;
+        color: $color_1;
+        .block__text {
+            font-size: $fz;
+            span {
+            color: $color_2;
+            }
+        }
+        &.block--big {
+            font-size: $fz;
+        }   
     }
+.link {
+    color: $color_2;
+    text-decoration: underline;
+    font-size: $fz;
+
+// обращение  в диве блок к классу родителя
+    .block & {
+        font-size: $fz;
+    }
+
+    // добавление шаблонов
+    &:hover {
+        color: $color_1;
+    }
+    @extend %tplborder;
+}
+
+// применияем миксины (подключаем)
+.link-2 {
+    @include fontz(50px,green,underline);
+    @extend %tplborder;
 }
