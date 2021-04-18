@@ -1,0 +1,118 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.main {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.header {
+  padding: 0 20%;
+  border-top: 4px solid #7f2e86;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 30px;
+}
+.header__text {
+  color: #555;
+}
+.header__nav {
+  display: block;
+}
+.header__list ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.header__list li {
+  display: block;
+  font-size: 16px;
+}
+.header__list li a {
+  display: block;
+  color: #555;
+  padding: 50px 15px 30px 15px;
+  text-transform: uppercase;
+}
+.header__list li a:hover {
+  color: #ffffff;
+  background-color: #7f2e86;
+}
+
+.title {
+  color: #7f2e86;
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
