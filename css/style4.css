@@ -272,3 +272,19 @@ body {
   font-size: 12px;
   letter-spacing: 0.3px;
 }
+
+@media (max-width: 1180px) {
+  .conteiner {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .conteiner {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .conteiner {
+    max-width: none;
+  }
+}
