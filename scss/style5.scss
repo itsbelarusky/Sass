@@ -1,0 +1,60 @@
+@import "nullstyle.scss";
+// анимации на сайте
+
+body {
+    background-color: rgb(46, 39, 39);
+}
+.wrapper {
+    
+}
+.conteiner {
+    
+}
+.content {
+    
+		&__circle {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #fff;
+            margin: 50px;
+            position: relative;
+            // сценарий развития анимации
+            animation-timing-function: linear;
+            // имя анимации
+            animation-name: white-circle;
+            // длительность анимации
+            animation-duration: 2s;
+            // повторение анимации
+            animation-iteration-count: infinite;
+            // анимация пинпонга
+            animation-direction: alternate; 
+            // задержка
+            animation-delay: 0s;
+            // остановка в конце пути анимации
+            animation-fill-mode: forwards;
+            
+            // короткая запись
+            // animation: white-circle 2s linear infinite alternate 0s forwards;
+		}
+
+        // останавливает анимацию при наведении
+    &:hover &__circle {
+         animation-play-state: paused;
+     }
+}
+
+@keyframes white-circle{
+    0%{
+        left: 0;
+    }
+    50%{
+        border-radius: 0;
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+        left: 500px;
+
+    }
+}

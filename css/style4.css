@@ -91,6 +91,21 @@ body {
   max-width: 1180px;
   margin: 0 auto;
 }
+@media (max-width: 1180px) {
+  .conteiner {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .conteiner {
+    max-width: 750px;
+  }
+}
+@media (max-width: 767px) {
+  .conteiner {
+    max-width: none;
+  }
+}
 
 .hi {
   background-color: #445162;
@@ -247,15 +262,27 @@ body {
   margin: 0;
 }
 .vertical__btn {
-  display: block;
+  display: flex;
   height: 40px;
-  background-color: #ffffff;
+  background-color: #5e5373;
   margin: 0 20px;
   line-height: 40px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 5px;
-  color: #445162;
+  color: #fff;
   font-size: 18px;
+  position: relative;
+  top: 0;
+  box-shadow: 0 5px 0px #3c354a;
+  transition-duration: 0.5s;
+}
+.vertical__btn:active {
+  top: 2px;
+  box-shadow: 0 3px 0px #3c354a;
+  background-color: #18b5a4;
+  color: #fff;
 }
 
 .footer {
@@ -271,20 +298,4 @@ body {
   color: #445162;
   font-size: 12px;
   letter-spacing: 0.3px;
-}
-
-@media (max-width: 1180px) {
-  .conteiner {
-    max-width: 970px;
-  }
-}
-@media (max-width: 992px) {
-  .conteiner {
-    max-width: 750px;
-  }
-}
-@media (max-width: 767px) {
-  .conteiner {
-    max-width: none;
-  }
 }
