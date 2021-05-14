@@ -278,7 +278,7 @@ body {
   box-shadow: 0 5px 0px #3c354a;
   transition-duration: 0.5s;
 }
-.vertical__btn:active {
+.vertical__btn:hover {
   top: 2px;
   box-shadow: 0 3px 0px #3c354a;
   background-color: #18b5a4;
